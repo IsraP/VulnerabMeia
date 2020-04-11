@@ -1,2 +1,5 @@
 # VulnerabMeia
-# Um projeto sobre ajudar pessoas de meia idade a não tomarem um golpe de base.
+Um projeto sobre como ensinar pessoas de meia idade a não terem seus dados expostos e roubados na internet.
+
+# O Problema
+
