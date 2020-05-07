@@ -1,0 +1,29 @@
+div.navbar h1:hover {
+    border-bottom: 3px solid green;
+  }
+
+
+.nopadding{
+    padding: 0px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.carousel-indicators li {
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 100% !important;
+    }
+
+    #carouselExampleCaptions
+    {
+        width: 100%;
+        width: 950px;
+        margin-left: 30px;
+    }
+
+.imagemcard{
+    width: 100%;
+}
