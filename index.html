@@ -12,48 +12,59 @@
     <link rel="stylesheet" href="index.css">
     <script src="https://kit.fontawesome.com/d07912339e.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/d07912339e.js" crossorigin="anonymous"></script>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <title>Vulnerabilidade</title>
 </head>
 
 <body>
     <header class='header'>
-        <div class="bg-dark ">
-            <div class="container">
+        <div class=" ">
+            <div class="container ">
                 <div class="row navbar d-flex justify-content-start">
-                    <div class='col-2 text-light d-flex '>
-                        <img class="logo" src="Logo3.png" width=40%>
-                        <p class='ToHelp align-self-center'><strong>ToHelp</strong></p>
+                    <div class='col-2 d-flex'>
+                        <img class="logo" src="logo.png" width=40%>
+                        <p class='ToHelp align-self-center pl-1'><strong class="text-primaria">ToHelp</strong></p>
                     </div>
-                    <div class="col-5 text-light d-flex menu nopadding">
+                    <div class="col-5 d-flex menu nopadding">
                         <a href="" class='px-2'>
-                            <h6>Home</h6>
+                            <h6 class="text-primaria">Home</h6>
                         </a>
                         <a href="" class='px-2'>
-                            <h6>Conteudo</h6>
+                            <h6 class="text-primaria">Conteudo</h6>
                         </a>
                         <a href="" class='px-2 '>
-                            <h6>Nossa empresa</h6>
+                            <h6 class="text-primaria">Nossa empresa</h6>
                         </a>
                         <a href="" class='px-2'>
-                            <h6>Contato</h6>
+                            <h6 class="text-primaria">Contato</h6>
                         </a>
                     </div>
-                    <div class="col-5 d-flex text-light justify-content-end">
+                    <div class="col-5 d-flex justify-content-end ">
                         <div class="px-2">
                             <form class="form-inline">
                                 <div class="form-group mx-sm-3 mb-2">
-                                    <label for="pesquisa" class="sr-only">Password</label>
-                                    <input type='search' class="form-control" id="pesquisa" placeholder="Pesquisar">
-                                    <button type="submit" class="btn text-light btn-dark btn-outline-primary mx-2"><i
-                                            class="fa fa-search"></i></button>
+                                    <link rel="stylesheet"
+                                        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+                                    <link rel="stylesheet"
+                                        href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
+
+                                    <form class="search">
+                                        <div class="search__wrapper">
+                                            <input type="text" name="" placeholder="Pesquisar..."
+                                                class="search__field">
+                                            <button type="submit" class="fa text-primaria fa-search search__icon"></button>
+                                        </div>
+                                    </form>
                                 </div>
                             </form>
                         </div>
-                        <a href="" class="px-2">
-                            <h6>Login</h6>
+                        <a href="" class="px-2 align-self-center">
+                            <h6 class="text-primaria">Login</h6>
                         </a>
-                        <a href="" class="px-2">
-                            <h6>Cadastro</h6>
+                        <a href="" class="px-2 align-self-center">
+                            <h6 class="text-primaria">Cadastro</h6>
                         </a>
                     </div>
                 </div>
@@ -61,145 +72,137 @@
         </div>
     </header>
     <main class="main">
-        <div class="container">
-            <div class="row d-flex justify-content-center pt-2">
-                <div id="carouselExampleCaptions" class="carousel slide aaa" data-ride="carousel">
-                    <ol class="carousel-indicators uwu" id="cg">
-                        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner ">
-                        <div class="carousel-item active ">
-                            <img src="https://www.oficinadanet.com.br/imagens/post/26729/the-witcher.jpg"
-                                class=" w-100 grand asas " height="530px">
-                            <div class="carousel-caption d-none d-md-block text-light">
-                                <h5>The Witcher</h5>
-                                <p>Venha conferir a série do mês.</p>
+        <div class="bg-bed">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 text-dark align-self-center">
+                        <h3 class="text-primaria">Lorem, ipsum dolor.</h3>
+                        <p class="text-justify text-dark">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat, expedita ad esse facere a recusandae.</p>
+                        <a class="btn bg-primaria text-white">Lorem, ipsum.</a>
+                    </div>
+                    <div class="col-6">
+                        <img src="imagemtop.jpg" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        <div class="bg-sceondary">
+            <div class=" container">   
+                <div class="row py-4 d-flex justify-content-center ">
+                    <div class="">
+                        <hr class="bg-primaria">
+                        <h3 class="text-primaria">Como podemos te ajudar</h3>
+                        <hr class="bg-primaria">
+                    </div>
+                </div>
+                <div class="row row-cols-2 row-cols-sm-2 row-cols-md-2 text-dark py-4">
+                    <div class="col-md-3 col-sm-6 col-6">
+                        <i class="fa fa-3x text-secundaria fa-user-shield"></i>
+                        <h5>Proteção</h5>
+                        <p class="text-secondary">Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-6">
+                        <i class="fa fa-3x text-secundaria fa-mask"></i>
+                        <h5>Roubo e Hacking</h5>
+                        <p class="text-secondary">Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-6">
+                        <i class="fa fa-3x text-secundaria fa-comment-alt"></i>
+                        <h5>Atendimento</h5>
+                        <p class="text-secondary">Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-6">
+                        <i class="fa fa-3x text-secundaria fa-users"></i>
+                        <h5>Nosso Grupo</h5>
+                        <p class="text-secondary">Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>         
+                <div class="row pt-4 d-flex justify-content-center ">
+                    <div class="">
+                        <hr class="bg-danger">
+                        <h3 class="text-danger">Vídeos</h3>
+                        <hr class="bg-danger">
+                    </div>
+                </div>
+                <div class="row text-secondary justify-content-center pb-3">
+                    <h4>Vídeos para te ajudar blablabla</h4>
+                </div>
+                <div class="row ">
+                    <div class="card-group">
+                        <div class="card">
+                            <img src="video1.png" class=" img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-primaria">Card title</h5>
+                                <p class="card-text text-dark">This is a wider card with supporting text below as a natural lead-in to
+                                    additional content. This content is a little bit longer.</p>
+                            </div>
+                            <div class="card-footer">
+                                <a class="btn btn-primary" href="#" role="button">Veja mais</a>
                             </div>
                         </div>
-                        <div class="carousel-item ">
-                            <img src="https://miro.medium.com/max/7680/1*ELn2VylIgfDTb396AVS2FA.jpeg"
-                                class=" w-100 grand " height="530px">
-                            <div class="carousel-caption d-none d-md-block text-light">
-                                <h5>Brooklyn Nine-Nine</h5>
-                                <p>Venha conferir a série da semana.</p>
+                        <div class="card">
+                            <img src="video2.png" class="img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-primaria">Card title</h5>
+                                <p class="card-text text-dark">This card has supporting text below as a natural lead-in to additional
+                                    content.</p>
+                            </div>
+                            <div class="card-footer">
+                                <a class="btn btn-primary" href="#" role="button">Veja mais</a>
                             </div>
                         </div>
-                        <div class="carousel-item ">
-                            <img src="https://s2.glbimg.com/Sq8KjckAM1LQ4gwRXF5blVdfO5s=/e.glbimg.com/og/ed/f/original/2019/09/17/0c7c7ac6-1b3e-4e14-b36a-85fb92de2af6_lordoftherings.jpg"
-                                class=" w-100 " class="d-block w-100">
-                            <div class="carousel-caption d-none d-md-block text-light">
-                                <h5>Senhor dos Anéis</h5>
-                                <p>Venha maratonar a trilogia do filme.</p>
+                        <div class="card">
+                            <img src="video3.png" class="img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-primaria">Card title</h5>
+                                <p class="card-text text-dark">This is a wider card with supporting text below as a natural lead-in to
+                                    additional content. This card has even longer content than the first to show that equal
+                                    height action.</p>
+                            </div>
+                            <div class="card-footer">
+                                <a class="btn btn-primary" href="#" role="button">Veja mais</a>
                             </div>
                         </div>
                     </div>
-                    <a class="carousel-control-prev" href="#carouselExampleCaptions " role="button" data-slide="prev"
-                        data-interval="5000">
-                        <span class="carousel-control-prev-icon sdsd" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon " aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                    </a>
                 </div>
-            </div>
-            <div class="row py-4 d-flex justify-content-center">
-                <div class="">
-                    <hr class="bg-danger">
-                    <h3 class="text-danger">Vídeos</h3>
-                    <hr class="bg-danger">
-                </div>
-            </div>
-            <div class="row ">
-                <div class="card-group">
-                    <div class="card">
-                        <img src="https://picsum.photos/seed/picsum/200/300" class=" img-fluid" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.</p>
-                        </div>
-                        <div class="card-footer">
-                            <a class="btn btn-primary" href="#" role="button">Veja mais</a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="https://picsum.photos/200/300?grayscale" class="img-fluid" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This card has supporting text below as a natural lead-in to additional
-                                content.</p>
-                        </div>
-                        <div class="card-footer">
-                            <a class="btn btn-primary" href="#" role="button">Veja mais</a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="https://picsum.photos/200/300/?blur" class="img-fluid" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This card has even longer content than the first to show that equal
-                                height action.</p>
-                        </div>
-                        <div class="card-footer">
-                            <a class="btn btn-primary" href="#" role="button">Veja mais</a>
-                        </div>
+                <div class="row py-4 d-flex justify-content-center ">
+                    <div class="">
+                        <hr class="bg-primary">
+                        <h3 class="text-primary">Destaques</h3>
+                        <hr class="bg-primary">
                     </div>
                 </div>
-            </div>
-            <div class="row py-4 d-flex justify-content-center ">
-                <div class="">
-                    <hr class="bg-primary">
-                    <h3 class="text-primary">Destaques</h3>
-                    <hr class="bg-primary">
-                </div>
-            </div>
-            <div class="row">
-                <div class="card-group">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.</p>
+                <div class="row justify-content-center pb-5">
+                    <div class="card-group">
+                        <div class="card border-primaria">
+                            <div class="card-body mx-5">
+                                <a href=""><i class="fa fa-question-circle fa-3x card-title text-primaria"></i></a>
+                                <a href=""><p class="card-text text-dark">Dúvidas mais frequentes</p></a>
+                            </div>
                         </div>
-                        <div class="card-footer">
-                            <small class="text-muted">Last updated 3 mins ago</small>
+                        <div class="card border-primaria">
+                            <div class="card-body mx-5">
+                                <a href=""><i class="fa fa-exclamation-circle fa-3x card-title text-primaria"></i></a>
+                                <a href=""><p class="card-text text-dark">Denuncie um site</p></a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This card has supporting text below as a natural lead-in to additional
-                                content.</p>
-                        </div>
-                        <div class="card-footer">
-                            <small class="text-muted">Last updated 3 mins ago</small>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This card has even longer content than the first to show that equal
-                                height action.</p>
-                        </div>
-                        <div class="card-footer">
-                            <small class="text-muted">Last updated 3 mins ago</small>
+                        <div class="card border-primaria">
+                            <div class="card-body mx-5">
+                                <a href=""><i class="fa fa-history fa-3x card-title text-primaria"></i></a>
+                                <a href=""><p class="card-text text-dark">Histórico de sites</p></a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        
 
     </main>
     <footer class="footer bg-dark mt-4">
         <div class="container">
-            <div class="row d-flex justify-content-center">
+            <div class="row d-flex justify-content-center pt-3">
                 <div class="col-3 text-light">
                     <h1 class="py-2">Quem somos</h1>
                     <p class="text-justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum repellat
@@ -235,11 +238,13 @@
                 <div class="col-3 py-2">
                     <h1 class="text-light">Redes Sociais</h1>
                     <a href="#contact" class="scrollSuave  px-2 text-light"><i class="fab  fa-lg fa-facebook-f"></i></a>
-                    <a href="#contact" class="scrollSuave  px-2 text-light"><i class="fab  fa-lg fa-whatsapp"></i></a> <a
-                        href="#contact" class="scrollSuave px-2  text-light"><i class="fab fa-lg  fa-twitter"></i></a> <a
-                        href="#contact" class="scrollSuave px-2  text-light"><i class="fab fa-lg  fa-instagram "></i></a> <a
-                        href="#contact" class="scrollSuave px-2  text-light"><i class="fab fa-lg  fa-vimeo-v"></i></a> <a
-                        href="#contact" class="scrollSuave px-2  text-light"><i class="fab fa-lg  fa-linkedin-in"></i></a>
+                    <a href="#contact" class="scrollSuave  px-2 text-light"><i class="fab  fa-lg fa-whatsapp"></i></a>
+                    <a href="#contact" class="scrollSuave px-2  text-light"><i class="fab fa-lg  fa-twitter"></i></a> <a
+                        href="#contact" class="scrollSuave px-2  text-light"><i
+                            class="fab fa-lg  fa-instagram "></i></a> <a href="#contact"
+                        class="scrollSuave px-2  text-light"><i class="fab fa-lg  fa-vimeo-v"></i></a> <a
+                        href="#contact" class="scrollSuave px-2  text-light"><i
+                            class="fab fa-lg  fa-linkedin-in"></i></a>
                 </div>
             </div>
         </div>
