@@ -26,15 +26,32 @@ button{outline: none !important;}
 .bg-primaria{
     background-color: #231a8a !important;
 }
+
 .text-secundaria{
     color: #9feeee !important;
 }
-.text-terciaria{
-    color: #999;
+.bg-terciaria{
+    background-color: rgb(221, 221, 221);
 }
 .border-primaria{
     border-width: 3px;
     border-color: #231a8a !important;
+}
+
+.redondo{
+    padding: 1.25rem 2.25rem;
+    font-size: 0.85rem;
+    font-weight: 650;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 10rem;
+}
+.text-black{
+    color: #000000 !important;
+}
+
+.fontelegal{
+    font-family: sans-serif ;
 }
 
 .carousel-indicators li {
@@ -128,7 +145,7 @@ Barra de Pesquisa
   }
   .search__field:focus {
     border-bottom-color: #ccc;
-    width: 25vw;
+    width: 15vw;
     color: #2b2b2b;
     cursor: default;
   }
