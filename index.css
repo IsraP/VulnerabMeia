@@ -325,7 +325,10 @@ Barra de Pesquisa
     cursor: default;
     justify-content: center;
   }
-
+  
+  }
+  .normal15{
+    display: none;
   }
   @media screen and (max-width: 812px) and (min-width: 415px){
   
@@ -337,7 +340,9 @@ Barra de Pesquisa
       border: none !important;
       
     }
-    
+    .normal15{
+      display: block;
+    }
     
 
     .titulodicas{
