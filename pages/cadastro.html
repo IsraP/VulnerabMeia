@@ -15,8 +15,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <script src="../js/login.js" async></script>
-    <script src="../js/style.js" async></script>
+    <script src="../js/login.js"></script>
+    <script src="../js/style.js"></script>
     <link rel="stylesheet" type="text/css" href="../css/login.css">
     <title>ToHelp - Login</title>
 </head>
@@ -48,8 +48,8 @@
                     <div class="col-sm-6 form">
 
                         <!-- Login Form -->
-                        <div class="login form-peice ">
-                            <form class="login-form">
+                        <div class="login form-peice switched">
+                            <form class="login-form" action="#" method="post">
                                 <div class="form-group">
                                     <label for="loginemail">Endereço de e-mail</label>
                                     <input type="email" name="loginemail" id="loginemail" required>
@@ -61,7 +61,7 @@
                                 </div>
 
                                 <div class="CTA">
-                                    <input type="submit" value="Login" id="envio">
+                                    <input type="submit" value="Login">
                                     <a href="#" class="switch">Não tem conta? Faça o cadastro</a>
                                 </div>
                             </form>
@@ -69,12 +69,12 @@
 
 
                         <!-- Signup Form -->
-                        <div class="signup form-peice switched">
-                            <form class="signup-form" action="#">
+                        <div class="signup form-peice ">
+                            <form class="signup-form" action="#" method="post">
 
                                 <div class="form-group">
-                                    <label for="username">Nome completo</label>
-                                    <input type="text" name="username" id="username" class="name">
+                                    <label for="name">Nome completo</label>
+                                    <input type="text" name="username" id="name" class="name">
                                     <span class="error"></span>
                                 </div>
 
@@ -102,7 +102,7 @@
                                 </div>
 
                                 <div class="CTA d-flex">
-                                    <input type="submit" value="Signup Now" id="cadastro">
+                                    <input type="submit" value="Signup Now" id="submit">
                                     <a href="#" class="switch">Eu ja tenho uma conta</a>
                                 </div>
                             </form>
