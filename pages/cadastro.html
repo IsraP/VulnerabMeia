@@ -4,7 +4,7 @@
 <head>
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
         integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <!------ Include the above in your HEAD tag ---------->
@@ -15,8 +15,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <script src="../js/login.js"></script>
-    <script src="../js/style.js"></script>
+    <script src="../js/login.js" async></script>
+    <script src="../js/style.js" async></script>
     <link rel="stylesheet" type="text/css" href="../css/login.css">
     <title>ToHelp - Login</title>
 </head>
@@ -49,7 +49,7 @@
 
                         <!-- Login Form -->
                         <div class="login form-peice switched">
-                            <form class="login-form" action="#" method="post">
+                            <form class="login-form" action="" method="POST">
                                 <div class="form-group">
                                     <label for="loginemail">Endereço de e-mail</label>
                                     <input type="email" name="loginemail" id="loginemail" required>
@@ -58,28 +58,34 @@
                                 <div class="form-group">
                                     <label for="loginPassword">Senha</label>
                                     <input type="password" name="loginPassword" id="loginPassword" required>
+                                    <p id='senhaerrada'></p>
                                 </div>
 
+                                <div class="alert alert-danger" role="alert" id='alertasenha'>
+                                    <i class="fa fa-exclamation-circle pr-2"></i>E-mail ou senha incorreta.
+                                  </div>
+
                                 <div class="CTA">
-                                    <input type="submit" value="Login">
+                                    <input type="submit" value="Login" id="envio">
                                     <a href="#" class="switch">Não tem conta? Faça o cadastro</a>
                                 </div>
+                                
                             </form>
                         </div><!-- End Login Form -->
 
 
                         <!-- Signup Form -->
                         <div class="signup form-peice ">
-                            <form class="signup-form" action="#" method="post">
+                            <form class="signup-form" action="#">
 
                                 <div class="form-group">
-                                    <label for="name">Nome completo</label>
-                                    <input type="text" name="username" id="name" class="name">
+                                    <label for="username">Nome completo <span class="campoObrigatorio text-danger"></span></label>
+                                    <input type="text" name="username" id="username" class="name">
                                     <span class="error"></span>
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="email">Endereço de e-mail</label>
+                                    <label for="email">Endereço de e-mail <span class="campoObrigatorio text-danger"></span></label>
                                     <input type="email" name="emailAdress" id="email" class="email">
                                     <span class="error"></span>
                                 </div>
@@ -90,19 +96,23 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="password">Senha</label>
+                                    <label for="password">Senha <span class="campoObrigatorio text-danger"></span></label>
                                     <input type="password" name="password" id="password" class="pass">
                                     <span class="error"></span>
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="passwordCon">Confirmar senha</label>
+                                    <label for="passwordCon">Confirmar senha <span class="campoObrigatorio text-danger"></span></label>
                                     <input type="password" name="passwordCon" id="passwordCon" class="passConfirm">
                                     <span class="error"></span>
                                 </div>
 
+                                <div class="alert alert-danger" role="alert" id='alertaconfirmar'>
+                                    <i class="fa fa-exclamation-circle pr-2"></i>As senhas não coincidem.
+                                  </div>
+
                                 <div class="CTA d-flex">
-                                    <input type="submit" value="Signup Now" id="submit">
+                                    <input type="submit" value="Signup Now" id="cadastro">
                                     <a href="#" class="switch">Eu ja tenho uma conta</a>
                                 </div>
                             </form>
