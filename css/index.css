@@ -14,6 +14,13 @@ a{
     background-color: #9feeee!important;
     
 }
+.fundo{
+  background-image: url("../media/fundo3.png");
+  background-size: 100%
+}
+
+
+
 
 form.search{outline: none !important;}
 form.search > div{outline: none !important;}
@@ -123,6 +130,10 @@ button{outline: none !important;}
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+
+  .text-quarter{
+    color: #575555 !important;
   }
 
 /*
@@ -274,11 +285,28 @@ Barra de Pesquisa
   display: none;
 }
 
+.celularHelp{
+  display: none;
+}
   @media screen and (max-width: 414px){
 
     .textohelp{
       display: none;
     }
+
+    .celularHelp{
+      display: block;
+    }
+
+    .fundo{
+      background-image: none;
+      background-color: #d7e7f4;
+    }
+
+    .desktopHelp{
+      display: none;
+    }
+    
     
     .fontelegal{
       font-size: 23px;
@@ -333,6 +361,14 @@ Barra de Pesquisa
   @media screen and (max-width: 812px) and (min-width: 415px){
   
     .cadastro{
+      display: none;
+    }
+
+    .celularHelp{
+      display: block;
+    }
+
+    .desktopHelp{
       display: none;
     }
 

@@ -16,6 +16,18 @@ body {
     max-width: 900px;
   }
   
+  #alertasenha{
+    display: none;
+  }
+
+  #alertaconfirmar{
+    display: none;
+  }
+
+  .campoObrigatorio {
+    display: none;
+  }
+
   a {
     display: inline-block;
     text-decoration: none;
@@ -223,7 +235,7 @@ body {
     color: #231a8a;
   }
   .form form .CTA {
-    margin-top: 30px;
+    margin-top: 0px;
   }
   .form form .CTA input {
     font-size: 12px;
