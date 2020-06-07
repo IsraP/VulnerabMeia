@@ -75,7 +75,7 @@ onload = () => {
                     };
                     console.log(dados)
                     sendData.send(JSON.stringify(dados));
-
+                    location.href = "https://israp.github.io/VulnerabMeia/pages/login.html";
                 }
             }
         }
