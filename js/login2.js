@@ -29,7 +29,7 @@ onload = () => {
             for (i = 0; i < dados.length; i++) {
                 if (dados[i].email == email && dados[i].senha == pass) {
                     flagAlert = 1;
-                    location.href = "https://israp.github.io/VulnerabMeia/pages/cadastro.html";
+                    location.href = "https://israp.github.io/VulnerabMeia/pages/logado.html";
                 } else
                     console.log("Senha errada");
             }
