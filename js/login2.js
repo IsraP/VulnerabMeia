@@ -47,11 +47,7 @@ onload = () => {
             let sendData = new XMLHttpRequest;
             sendData.open("POST", "https://israp-api.herokuapp.com/dados", true);
             sendData.setRequestHeader("Content-Type", "application/json");
-            sendData.onreadystatechange = function() {//Call a function when the state changes.
-                if(sendData.readyState == 4 && sendData.status == 200) {
-                    alert(sendData.responseText);
-                }
-            }
+            
 
             if(password.value != passwordCon.value){
                 document.getElementById("alertaconfirmar").style = `display: block`;
@@ -75,7 +71,11 @@ onload = () => {
                     };
                     console.log(dados)
                     sendData.send(JSON.stringify(dados));
-                    location.href = "https://israp.github.io/VulnerabMeia/pages/login.html";
+                    sendData.onreadystatechange = function() {//Call a function when the state changes.
+                        if(sendData.readyState == 4) {
+                            location.href = "https://israp.github.io/VulnerabMeia/pages/logado.html";
+                        }
+                    }
                 }
             }
         }
