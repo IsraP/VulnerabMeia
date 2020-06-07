@@ -79,10 +79,8 @@ Onload: {
                     if(flagAlert == 0)
                         document.getElementById("alertasenha").style = `display: block;`
                         
-
-
-                
                 console.log("terminando login...")
+                console.log(evento)
                 evento.preventDefault()
                 
             }
