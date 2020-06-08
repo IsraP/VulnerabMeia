@@ -1,9 +1,4 @@
 onload = () => {
-
-
-
-
-
     Funções: {
         function lerDados(evento) {
             Requests: {
@@ -16,7 +11,7 @@ onload = () => {
         }
 
         function login() {
-            let dados;
+            var dados;
             dados = JSON.parse(this.responseText);
             console.log(dados);
             console.log("iniciando login...")
@@ -29,6 +24,10 @@ onload = () => {
             for (i = 0; i < dados.length; i++) {
                 if (dados[i].email == email && dados[i].senha == pass) {
                     flagAlert = 1;
+                    var dadosLogado2 = {
+                        "nome": loginemail.value
+                    }
+                    localStorage.setItem('logado', JSON.stringify(dadosLogado2));
                     location.href = "https://israp.github.io/VulnerabMeia/pages/logado.html";
                 } else
                     console.log("Senha errada");
@@ -38,6 +37,10 @@ onload = () => {
                 document.getElementById("alertasenha").style = `display: block;`
 
             console.log("terminando login...")
+
+            var dadosLogado = {
+                "nome": username.value
+            }
             return false;
 
         }
@@ -73,6 +76,10 @@ onload = () => {
                     sendData.send(JSON.stringify(dados));
                     sendData.onreadystatechange = function() {//Call a function when the state changes.
                         if(sendData.readyState == 4) {
+                            dadosLogado = {
+                                "nome": username.value
+                            }
+                            localStorage.setItem('logado', JSON.stringify(dadosLogado))
                             location.href = "https://israp.github.io/VulnerabMeia/pages/logado.html";
                         }
                     }

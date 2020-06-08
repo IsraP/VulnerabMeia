@@ -39,10 +39,11 @@
 
 .course-preview {
 	background-color: #2A265F;
-	color: #fff;
-	padding: 30px;
+  color: #fff;
+  padding: 30px;
 	max-width: 250px;
 }
+
 
 .course-preview a {
 	color: #fff;
@@ -103,7 +104,7 @@
 	
 	.floating-btn {
 		right: 10px;
-	}
+  }
 }
 
 
@@ -411,7 +412,37 @@ Barra de Pesquisa
 .celularHelp{
   display: none;
 }
+
+.some {
+  display: none;
+}
+
   @media screen and (max-width: 414px){
+    .some {
+      display: block;
+    }
+
+    .somepf{
+      display: none;
+    }
+
+    .course-preview {
+      background-color: #2A265F;
+      color: #fff;
+      padding: 30px;
+      max-width: 3000px;
+    }
+
+    .course {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+      display: block;
+      max-width: 100%;
+      margin-bottom: 20px;
+      overflow: hidden;
+      width: 700px;
+    }
 
     .textohelp{
       display: none;
