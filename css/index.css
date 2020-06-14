@@ -111,6 +111,49 @@
 
 /*Possivel merda*/
 
+
+.box-noticia {
+  margin: 10px 0px;
+  overflow: auto;
+  color: dimgray;
+  clear: both;
+}
+
+.fotinha{
+  width: 280px;
+}
+
+.videoTudo{
+  justify-content: start;
+  display: block;
+}
+
+.box-noticia img {
+  float: left;
+  margin-right: 10px;
+  width: 280px;
+}
+
+.box-noticia .titulu {
+  font-weight: 700;
+}
+
+.titulu {
+  color: #000000;
+}
+
+.creditus{
+  color: #000000;
+}
+
+.textu{
+  color: #000000;
+}
+
+.box-noticia .creditos {
+  color: red
+}
+
 .apresent{
   padding-top: 200px;
 }
