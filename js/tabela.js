@@ -1,6 +1,7 @@
 window.onload = () => {
     var tabela = document.getElementById("tabela");
     var começo = tabela.innerHTML;
+
     pesquisa.oninput = () => {
         let itens = document.getElementsByClassName("item");
         let pesquisa = document.getElementById("pesquisa").value;
@@ -38,6 +39,25 @@ window.onload = () => {
             tabela.innerHTML = newItens;
             }
             
+        
+    }
+
+    pesquisa.onchange = () => {
+        let ls = JSON.parse(localStorage.getItem("historico"));
+        let query = pesquisa.value;
+        let div = document.getElementById("historico");
+        let historico = {"valores": [`${query}`]};
+
+        if(ls == null){
+            localStorage.setItem("historico", JSON.stringify(historico));
+            div.innerHTML = `<p class="text-dark">Sua última pesquisa: ${query}</p>`
+        }
+        else{
+            console.log(ls)
+            ls.valores.push(query);
+            localStorage.setItem("historico", JSON.stringify(ls));
+            div.innerHTML = `<p class="text-dark">Sua última pesquisa: ${ls.valores[ls.valores.length-1]}</p>`
+        }
         
     }
 }
