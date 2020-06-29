@@ -57,41 +57,41 @@ onload = () => {
         }
 
         function adicionarDados(evento) {
-            evento.preventDefault();
-            let sendData = new XMLHttpRequest;
-            sendData.open("POST", "https://israp-api.herokuapp.com/dados", true);
-            sendData.setRequestHeader("Content-Type", "application/json");
+            evento.preventDefault(); // Evitar que a página redirecione antes de fazer a requisição
+            let sendData = new XMLHttpRequest; // Cria a requisição para enviar os dados
+            sendData.open("POST", "https://israp-api.herokuapp.com/dados", true); // Abre uma requisição POST
+            sendData.setRequestHeader("Content-Type", "application/json"); // Cria um header pro CORS nao encher o saco
             
 
             if(password.value != passwordCon.value){
-                document.getElementById("alertaconfirmar").style = `display: block`;
+                document.getElementById("alertaconfirmar").style = `display: block`; // Mostra que as senhas não coincidem
             }
 
             else{
                 if(username.value == "" || email.value == "" || password.value == "" || passwordCon.value == ""){
                     let camposObrigatorios = document.getElementsByClassName("campoObrigatorio");
                     for(i = 0; i < camposObrigatorios.length; i++){
-                        camposObrigatorios[i].innerHTML = `<strong>*</strong> Campo obrigatório.`
+                        camposObrigatorios[i].innerHTML = `<strong>*</strong> Campo obrigatório.` // Mostra os cambos obrigatorios
                         camposObrigatorios[i].style = `display: inline;`
                     }
                 }
                 else{
-                    let dados = 
+                    let dados = // Cria um objeto com os dados inseridos pelo usuário
                     {
                         "nome": encriptarDados(username.value, password.value),
                         "email": encriptarDados(email.value, password.value),
                         "telefone": encriptarDados(phone.value, password.value),
                         "senha": encriptarDados(password.value, password.value)
                     };
-                    console.log(dados)
-                    sendData.send(JSON.stringify(dados));
-                    sendData.onreadystatechange = function() {//Call a function when the state changes.
+                    console.log(dados) // debug dos dados
+                    sendData.send(JSON.stringify(dados)); // Envia os dados em formato de string para a api do json-server
+                    sendData.onreadystatechange = function() { // Chama a função quando os dados chegarem lá.
                         if(sendData.readyState == 4) {
-                            dadosLogado = {
+                            dadosLogado = { // Cria um objeto para salvar no localStorage o usuário que foi logado
                                 "nome": username.value
                             }
-                            localStorage.setItem('logado', JSON.stringify(dadosLogado))
-                            location.href = "https://israp.github.io/VulnerabMeia/pages/logado.html";
+                            localStorage.setItem('logado', JSON.stringify(dadosLogado)) // Salva no localStorage o usuário que foi logado
+                            location.href = "https://israp.github.io/VulnerabMeia/pages/logado.html"; // Redireciona para a página de usuário logado
                         }
                     }
                 }
