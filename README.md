@@ -10,7 +10,6 @@ Pretendemos ensinar tal grupo de risco a usar a internet de maneira segura sem o
 # Como
 * Site em HTML5
 * Uso de CSS, Javascript e Python
-* Uso da framework Django
 
 # Quem Somos
 Somos alunos de Ciência da Computação da PUC Minas, unidade Coração Eucarístico.
